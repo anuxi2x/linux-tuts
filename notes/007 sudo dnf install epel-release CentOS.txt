@@ -1,0 +1,1 @@
+The EPEL repository is an additional package repository that provides easy access to install packages for commonly used software. This repo was created because Fedora contributors wanted to use Fedora packages they maintain on RHEL and other compatible distributions.

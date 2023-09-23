@@ -1,0 +1,1 @@
+In VirtualBox menu bar: Devices > Insert Guest Additions CD Image… and execute VBoxLinuxAdditions.run, restart after action

@@ -1,0 +1,4 @@
+Linux shell only refers to the CLI / 'terminal' / 'console'.
+Allows us to work on devices that dont support graphical user interface (GUI).
+It's more efficent to use the CLI instead of GUI.
+

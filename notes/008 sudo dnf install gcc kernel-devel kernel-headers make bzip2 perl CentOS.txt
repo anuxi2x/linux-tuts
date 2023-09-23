@@ -1,0 +1,9 @@
+installing: 
+gcc 
+kernel-devel 
+kernel-headers 
+make 
+bzip2 
+perl
+
+and Execute VBoxLinuxAdditions.run

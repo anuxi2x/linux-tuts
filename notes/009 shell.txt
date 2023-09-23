@@ -1,0 +1,7 @@
+shell is outer layer of the operating system.
+It takes commands from the user and translates them into a form that the kernel can understand.
+It can also display the result of those commands to the user.
+
+In general: 
+everything that allow the outer world to access the operating system.
+so the graphical user interface is always a shell!

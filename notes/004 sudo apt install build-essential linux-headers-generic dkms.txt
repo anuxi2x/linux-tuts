@@ -1,0 +1,5 @@
+Install additional software, it allows installation of useful drivers
+
+build-essential 
+linux-headers-generic 
+dkms
