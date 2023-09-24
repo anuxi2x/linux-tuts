@@ -1,0 +1,4 @@
+echo -n 'Bash is amazing!'
+echo - command
+-n - option
+'Bash is amazing!' - argument(s)

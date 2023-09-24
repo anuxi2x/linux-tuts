@@ -1,0 +1,14 @@
+ls command uses for list the contents of the current working directory
+
+we can also add additional optiong:
+syntax: ls [option...] [path]
+
+options:
+-a: list all entries, including hidden files starting with .
+-r: reverse order while sorting
+-t: sort by modification time, newest first
+--color: enables colorful output
+--color have 3 options {always, never, auto}
+syntax: --color=always, --color=never, --color=auto
+
+ls / - list the content of root directory

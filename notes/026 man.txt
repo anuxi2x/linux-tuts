@@ -1,0 +1,5 @@
+man:
+if this doesnt work, we can check the built-in manuals
+
+example:
+man ls

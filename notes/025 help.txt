@@ -1,0 +1,8 @@
+--help or -h
+
+for lot of commands we can just add a -h or a --help
+
+example:
+ls --help
+
+we will then be shown a list of possible options and arguments

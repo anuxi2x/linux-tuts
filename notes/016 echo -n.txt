@@ -1,0 +1,2 @@
+in default echo print arguments with line break
+with -n option we can disable this

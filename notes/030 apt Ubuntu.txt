@@ -1,0 +1,26 @@
+on Debian-based distributions(such as Ubuntu), apt uses to keep our system up to date
+
+apt update:
+refreshes the list of available packages
+should run this before doing anything else with apt
+
+apt upgrade:
+runs a small upgrade of our system
+small means: upgrades exisiting packages (and when using apt, also allows the install of additional dependencies)
+
+apt full-upgrade or apt dist-upgrade:
+runs a large upgrade of our system
+large meant: ugrades existing packages and removes/installs additional packagaes or dependencies
+
+install/remove software
+
+apt install [package]:
+install additional package on our system
+example: apt install cowsay
+
+apt remove [package]:
+removes package from our system
+
+apt autoremove:
+removes package that are no longer needed
+can be run if there are any errors during an upgrade or full-upgrade

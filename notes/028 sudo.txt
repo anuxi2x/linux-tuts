@@ -1,0 +1,15 @@
+sudo temporarly elevate our privileges to superuser (root)
+
+example: 
+sudo ls /root
+usually, we could not access this directory
+only the root user can access it
+but sudo elevates our privilages
+this allow us to access it anyway
+
+but be careful:
+always make sure you understand what a command does
+especially when sudo is involved
+
+do not execute:
+sudo rm -rf /etc - it destroys whole system

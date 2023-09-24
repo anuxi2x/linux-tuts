@@ -1,0 +1,12 @@
+system accounts:
+they are responsible for running background tasks on your system (such as webserver, database,...)
+they dont have a home directory
+
+regular users: 
+they have access to their own files and directories
+they cannot perform administrative tasks or access other user's files without permission
+
+superuser (root):
+the superuser (root) has unrestrictred access to the entire system (includining files in the home directories of regular users)
+can add/remove users, install software
+can change the configuration of the system

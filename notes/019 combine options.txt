@@ -1,0 +1,6 @@
+combining multiple options
+
+example:
+echo -e -n 'Hello\nWorld' same as
+echo -en 'Hello\nWorld' same as
+echo -ne 'Hello\nWorld'

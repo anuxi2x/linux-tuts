@@ -1,0 +1,7 @@
+command1; command2;
+
+for example: 
+echo -n 'Hello '; echo 'World'
+output will be Hello World
+
+cd ..; cd Desktop; ls

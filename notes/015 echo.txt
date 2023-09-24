@@ -1,0 +1,9 @@
+echo allows us to output tex in the terminal
+
+example:
+
+echo 'something' (in single quotes '') will print something
+
+echo is command/program
+'something' is argument
+everything together is Bash command

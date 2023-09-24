@@ -1,0 +1,14 @@
+absolute paths:
+starts with a '/'
+define the complete path to a file
+work everywhere - no metter our current working directory
+
+home/anxy/Desktop - Desktop path
+~/Desktop - also Desktop path
+
+relative paths:
+are being resolved according to our current working directory
+example:
+./Desktop
+Desktop
+../Desktop

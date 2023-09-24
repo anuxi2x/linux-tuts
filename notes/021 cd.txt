@@ -1,0 +1,10 @@
+changing the directory with cd command
+cd [diretory_name]
+moves into the directory specified by [diretory_name]
+
+cd / - moves to root folder
+cd .. - moves to parent folder
+cd ../.. - moves to 2 leves up
+cd ~ - moves to home directory
+cd - also moves to home directory
+cd ~/Desktop - moves to users Desktop

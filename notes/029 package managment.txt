@@ -1,0 +1,13 @@
+package managment:
+linux distributions offer a centralized way to install software
+this process is called package managment
+this is an enourmous benefit of many linux systems
+
+also:
+a lot of apps no longer need to include their own updater
+(for example: chrome, firefox)
+
+it works this way:
+our system connects to centralized repos
+they provide a list of available packages
+this list can then be used to install updates, or install additional tools

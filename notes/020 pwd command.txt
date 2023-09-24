@@ -1,0 +1,6 @@
+in our terminal we are always in directory.
+this directory is called the working directory.
+it is the folder that the shell is currently operating at.
+commands can access this folder and act relative to this directory.
+
+to find out our current directory we can just use pwd command

@@ -1,0 +1,4 @@
+the option -e enables backslash escapes
+example:
+echo -e 'Line1\nLine2'
+here, \n will now be converted into a line break

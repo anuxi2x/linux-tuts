@@ -1,0 +1,2 @@
+outputs the version of bash
+014 echo "${BASH_VERSION}"
