@@ -1,0 +1,8 @@
+rm (remove)
+
+to remove a file or multiple files
+for deleting a directory, you need to use the option -r
+works for empty and non-empty directories
+
+rmdir (remove directory)
+to delete an empty directory

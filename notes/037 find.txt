@@ -1,0 +1,20 @@
+find:
+we should provide a path as a first parameter
+. for current working directory
+
+Examples:
+find . -type f - lists only files
+find . -type d - lists only directories
+
+find all files that have been modified within at least 7 days:
+find . -type f -mtime -7
+mtime: modification timestamp
+
+find all files that are larger than 10MB:
+find . -type f -size +10M
+
+delete all ampty files in a directory:
+find . -empty -delete
+
+find and delete all files that are larger than 10MB:
+find . -type f -size +10M -delete

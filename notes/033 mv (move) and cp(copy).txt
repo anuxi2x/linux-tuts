@@ -1,0 +1,9 @@
+mv (move)
+
+move an existing file to another location
+can also be used to rename the file
+
+cp (copy)
+to copy an existing file
+cp -R: copies a whole folder
+-R: Recursive

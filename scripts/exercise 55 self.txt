@@ -1,0 +1,27 @@
+anxy@anxy-vm:~/Desktop/companyshare/CompanyShare/Purchasing$ cd Desktop
+bash: cd: Desktop: No such file or directory
+anxy@anxy-vm:~/Desktop/companyshare/CompanyShare/Purchasing$ cd ~
+anxy@anxy-vm:~$ ls companyshare
+ls: cannot access 'companyshare': No such file or directory
+anxy@anxy-vm:~$ cd Desktop/
+anxy@anxy-vm:~/Desktop$ ls companyshare/
+CompanyShare  __MACOSX
+anxy@anxy-vm:~/Desktop$ ls companyshare/CompanyShare/
+Purchasing  Sales
+anxy@anxy-vm:~/Desktop$ ls companyshare/CompanyShare/Purchasing
+'01 - January'  '02 - February'  '03 - March'
+anxy@anxy-vm:~/Desktop$ cp companyshare/CompanyShare/Purchasing/?[1-2]*/*.pdf^C
+anxy@anxy-vm:~/Desktop$ cp companyshare/CompanyShare/Purchasing/?[1-2]*/*.pdf companyshare/CompanyShare/Purchasing/?[1-2]*/*.xslx ./march
+cp: cannot stat 'companyshare/CompanyShare/Purchasing/?[1-2]*/*.xslx': No such file or directory
+anxy@anxy-vm:~/Desktop$ cp companyshare/CompanyShare/**/?[1-2]*/*.pdf
+cp: target 'companyshare/CompanyShare/Sales/02 - February/Balance-Sheet-February.pdf' is not a directory
+anxy@anxy-vm:~/Desktop$ cp companyshare/CompanyShare/**/?[1-2]*/*.pdf ./march
+anxy@anxy-vm:~/Desktop$ cp companyshare/CompanyShare/**/?[1-2]*/*.xlsx ./march
+anxy@anxy-vm:~/Desktop$ cp companyshare/**/?[1-2]*/*.xlsx ./march
+cp: cannot stat 'companyshare/**/?[1-2]*/*.xlsx': No such file or directory
+anxy@anxy-vm:~/Desktop$ cp companyshare/**/**/?[1-2]*/*.xlsx ./march
+anxy@anxy-vm:~/Desktop$ cp **/**/**/?[1-2]*/*.xlsx ./march
+anxy@anxy-vm:~/Desktop$ cp **/**/**/?[1-2]*/*.xlsx ./march
+anxy@anxy-vm:~/Desktop$ cp **/**/**/?[1-2]*/*.xlsx **/**/**/?[1-2]*/*.pdf ./march
+anxy@anxy-vm:~/Desktop$ 
+

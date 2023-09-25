@@ -1,0 +1,12 @@
+bash can rewrite our command before it is being executed
+globbing recognizes and expands pre-defined wildcard characters
+it will then search for files that match this pattern and expand (rewrite) our command
+this allows us to easily access multiple files and file extensions
+
+for example:
+*.txt can access all the files with differrent file names and with the same .txt extensions
+some_text.* can access all the files with some_text name, no metter what extension they have
+
+Important:
+the wildcard characters must not be quotes (in 'single' or "double" quotes)
+globbing does not use regular expressions

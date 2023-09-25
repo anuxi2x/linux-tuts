@@ -1,0 +1,29 @@
+anxy@anxy-vm:~/Desktop$ mkdir tmp_website
+anxy@anxy-vm:~/Desktop$ cd tmp_website/
+anxy@anxy-vm:~/Desktop/tmp_website$ pwd
+/home/anxy/Desktop/tmp_website
+anxy@anxy-vm:~/Desktop/tmp_website$ touch index.html style.css script.js
+anxy@anxy-vm:~/Desktop/tmp_website$ ls
+index.html  script.js  style.css
+anxy@anxy-vm:~/Desktop/tmp_website$ mkdir styles
+anxy@anxy-vm:~/Desktop/tmp_website$ mv style.css styles/
+anxy@anxy-vm:~/Desktop/tmp_website$ mkdir scripts
+anxy@anxy-vm:~/Desktop/tmp_website$ mv script.js scripts/index.js
+anxy@anxy-vm:~/Desktop/tmp_website$ ls scripts
+index.js
+anxy@anxy-vm:~/Desktop/tmp_website$ mkdir pages
+anxy@anxy-vm:~/Desktop/tmp_website$ touch pages/page1.html
+anxy@anxy-vm:~/Desktop/tmp_website$ cp pages/page1.html pages/page2.html
+anxy@anxy-vm:~/Desktop/tmp_website$ cd pages/
+anxy@anxy-vm:~/Desktop/tmp_website/pages$ cp page1.html page3.html
+anxy@anxy-vm:~/Desktop/tmp_website/pages$ cd ..
+anxy@anxy-vm:~/Desktop/tmp_website$ mv pages/page2.html .
+anxy@anxy-vm:~/Desktop/tmp_website$ ls
+index.html  page2.html  pages  scripts  styles
+anxy@anxy-vm:~/Desktop/tmp_website$ rm index.html 
+anxy@anxy-vm:~/Desktop/tmp_website$ rm pages/page1.html pages/page3.html 
+anxy@anxy-vm:~/Desktop/tmp_website$ mv page2.html index.html
+anxy@anxy-vm:~/Desktop/tmp_website$ rmdir pages/
+anxy@anxy-vm:~/Desktop/tmp_website$ cd ..
+anxy@anxy-vm:~/Desktop$ rm -r tmp_website/
+anxy@anxy-vm:~/Desktop$ 

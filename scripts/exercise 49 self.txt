@@ -1,0 +1,54 @@
+anxy@anxy-vm:~/Desktop$ mkdir tmp_website
+anxy@anxy-vm:~/Desktop$ touch tmp_website/index.html; style.css; script.js 
+style.css: command not found
+script.js: command not found
+anxy@anxy-vm:~/Desktop$ touch tmp_website/style.css; script.js 
+script.js: command not found
+anxy@anxy-vm:~/Desktop$ touch tmp_website/script.js 
+anxy@anxy-vm:~/Desktop$ mkdir tmp_website/styles
+anxy@anxy-vm:~/Desktop$ mv tmp_website/style.css tmp_website/style
+anxy@anxy-vm:~/Desktop$ mv tmp_website/style.css tmp_website/style/style.css
+mv: failed to access 'tmp_website/style/style.css': Not a directory
+anxy@anxy-vm:~/Desktop$ mv tmp_website/style.css tmp_website/style/
+mv: failed to access 'tmp_website/style/': Not a directory
+anxy@anxy-vm:~/Desktop$ mv tmp_website/style.css tmp_website/styles/
+mv: cannot stat 'tmp_website/style.css': No such file or directory
+anxy@anxy-vm:~/Desktop$ mv tmp_website/style.css tmp_website/styles/style.css
+mv: cannot stat 'tmp_website/style.css': No such file or directory
+anxy@anxy-vm:~/Desktop$ cd tmp_website/
+anxy@anxy-vm:~/Desktop/tmp_website$ mv style.css styles/
+mv: cannot stat 'style.css': No such file or directory
+anxy@anxy-vm:~/Desktop/tmp_website$ mv style style.css
+anxy@anxy-vm:~/Desktop/tmp_website$ mv style.css styles/
+anxy@anxy-vm:~/Desktop/tmp_website$ mkdir scripts
+anxy@anxy-vm:~/Desktop/tmp_website$ mv script.js script/index.js
+mv: cannot move 'script.js' to 'script/index.js': No such file or directory
+anxy@anxy-vm:~/Desktop/tmp_website$ mv script.js /script/index.js
+mv: cannot move 'script.js' to '/script/index.js': No such file or directory
+anxy@anxy-vm:~/Desktop/tmp_website$ mv script.js scripts/index.js
+anxy@anxy-vm:~/Desktop/tmp_website$ mkdir pages; touch pages/page1.html
+anxy@anxy-vm:~/Desktop/tmp_website$ cp pages/page1.html pages/page2.html pages/page3.hrml
+cp: target 'pages/page3.hrml' is not a directory
+anxy@anxy-vm:~/Desktop/tmp_website$ cp pages/page1.html pages/page2.html pages/page3.html
+cp: target 'pages/page3.html' is not a directory
+anxy@anxy-vm:~/Desktop/tmp_website$ cp pages/page1.html pages/page2.html
+anxy@anxy-vm:~/Desktop/tmp_website$ cp pages/page1.html pages/page3.html
+anxy@anxy-vm:~/Desktop/tmp_website$ mv pages/page2.html ../
+anxy@anxy-vm:~/Desktop/tmp_website$ mv pages/page2.html ../pages
+anxy@anxy-vm:~/Desktop/tmp_website$ mv pages/page2.html tmp_website/
+mv: cannot move 'pages/page2.html' to 'tmp_website/': Not a directory
+anxy@anxy-vm:~/Desktop/tmp_website$ mv pages/page2.html pages/../
+anxy@anxy-vm:~/Desktop/tmp_website$ rm index.html 
+anxy@anxy-vm:~/Desktop/tmp_website$ rm pages/page1.html; rm pages/page3.html
+anxy@anxy-vm:~/Desktop/tmp_website$ mv page2.html index.html
+anxy@anxy-vm:~/Desktop/tmp_website$ rmdir pages
+anxy@anxy-vm:~/Desktop/tmp_website$ cd ..
+anxy@anxy-vm:~/Desktop$ rmdir -r tmp_website/
+rmdir: invalid option -- 'r'
+Try 'rmdir --help' for more information.
+anxy@anxy-vm:~/Desktop$ rmdir -R tmp_website/
+rmdir: invalid option -- 'R'
+Try 'rmdir --help' for more information.
+anxy@anxy-vm:~/Desktop$ rm -r tmp_website/
+anxy@anxy-vm:~/Desktop$ 
+

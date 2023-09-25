@@ -1,0 +1,9 @@
+? - matches any single character
+[0-9] - square brackets allows to specify a character range
+[a-z] - for example matches all letters from a to z
+[A-Z] - for example matches all letters from A to Z (capital letters)
+** - matches zero up to all characters (including /), so we can look in the subfolders too
+shopt -s globstar - enables ** feature (in my case it doesnt work)
+
+best practise to have ./* or something like this to work with files
+. - our current directory

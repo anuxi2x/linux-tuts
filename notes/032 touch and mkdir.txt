@@ -1,0 +1,11 @@
+touch
+typical use case: create an empty file (or multiple files)
+
+more precisely:
+to modify the timestamp of the file
+if the fle already exists, only its timestamp will be modified
+otherwise, a new (and empty) file will be created
+
+
+mkdir (make directory)
+create a new directory
