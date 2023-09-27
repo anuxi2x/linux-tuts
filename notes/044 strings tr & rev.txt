@@ -1,0 +1,18 @@
+tr uses to replace on a character level
+tr - translate
+
+echo 'bash' | tr 'b' 'd'
+output will be dash
+
+convert upper and lower case:
+echo 'awsome' | tr 'a-z' 'A-Z'
+output will be AWESOME
+
+to delete chars: tr -d
+echo 'Bash is amazing' | tr -d ' '
+output will be: Bashisamazing
+
+
+rev to reverse a string
+echo 'was it a cat i saw?' | rev
+output will be: ?was i tac a ti saw

@@ -1,0 +1,17 @@
+grep
+grep is a tool that can find a patter in an ourput or a file
+
+basic usage:
+grep -F 'pattern' file.txt
+
+can also be used on stdin
+
+grap and binary data:
+grep works with every file - it will just find the pattern in the file
+we could also execute grep on files that contain binary data
+
+but we shouldnt:
+we may find files we are not intending to fint
+grep is mean to be used on text files, not on binary files
+grep is slow on binary files
+binary files may contain non-printable chars, or chars that changes the behavior of terminal once printed

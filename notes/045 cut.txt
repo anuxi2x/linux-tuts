@@ -1,0 +1,14 @@
+cat allows us to process and extract data from a file or standard input
+
+cutting by bytes:
+cut -b
+
+cutting by characters:
+cut -c
+
+cutting by fields:
+cut -d ' ' -f 1
+-d ' ' default seperator (in most cases it will be whitespace)
+
+cut -d ' ' -f 1-5
+cuts 1-5 fields

@@ -1,0 +1,25 @@
+sed allows to easily executo commands on a file or on stdin
+
+syntax:
+sed 'command1; command2; ...'
+
+commands can modify the string, such as:
+delete lines
+insert lines
+replace lines (most common use case)
+
+syntax for replacement:
+sed 's/[pattern]/[replacement]/[flags]
+
+replaces string with another
+the most common flag is 'g':
+this means we want to replace all occurrences, not just a firts
+
+there rae several different implementations of sed
+for example:
+OS X uses an implementation from FreeBDS from 2005...
+Linux usually uses GNU sed
+this means for us:
+most of the code workes exaclty the samo on each platform
+however there might be some minor differences
+(especially when running comples sed commands)

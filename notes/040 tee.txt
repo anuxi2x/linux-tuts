@@ -1,0 +1,7 @@
+with combination of pipe and tee command we can create a standart output and write it to a file at the same time
+
+example:
+echo 'Hello World' | tee hello.txt
+
+to append to file use parameter -a: 
+echo 'Hello World' | tee -a hello.txt

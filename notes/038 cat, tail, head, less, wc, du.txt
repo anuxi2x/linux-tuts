@@ -1,0 +1,37 @@
+cat - the commant allows to print the content of a file 
+head - show us the start of a file
+we can specify the parameter -n for the number of lines
+
+example: 
+head -n 10 romeo. txt
+default parameter of head -n is 10
+
+tail - outputs the last 10 lines from backward by default
+
+less - allows us to ready large files
+we can use the arrows to navigate through the file
+or we can use f(forward) and (backward) to navigate a whole page ahead or back
+we can also navigate to a percentage of our content: just enter 50p to navigate 50% of our content 
+= - shows the current position
+-N - display all row numbers
+/Search - forward search 
+?Search - backward search
+q - quit
+
+wc - word count 
+example: wc file. txt
+
+wc - lwc:
+-l - counts numbers of lines
+-w - counts numbers of words
+-c - counts numbers of bytes (=8 bit ASCII-characters)
+
+du - disk usage
+it will calculate the size of all items in this folder
+-S parameter will get a summary
+-h parameter get a size in human-readable format
+-k parameter get a size in kilobytes
+
+Nano editor
+'apt-get update'
+'apt-get install -y nano' instals nano editor

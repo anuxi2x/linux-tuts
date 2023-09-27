@@ -1,0 +1,13 @@
+how many request have downloaded .zip files ?
+my answer: cat access.log | grep -F '.zip' | wc -l
+4061
+
+solution by tutor: grep -F '.zip' access.log | wc -l
+4061
+
+how many different .zip files have been downloaded?
+my answer: cat access.log | grep -F '.zip' | cut -d ' ' -f 7 | sort -u | wc -l
+27
+
+solution by tutor: grep -F '.zip' access.log | cut -d ' ' -f 7 | sort -u | wc -l
+27

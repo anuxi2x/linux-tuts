@@ -1,0 +1,17 @@
+sort
+sort the contents in a file or stdin:
+by default: Alphabetical order
+-r : sort in reverse alphabetical order
+-n : sort numbers accoring to numrical order
+-c : check wheather the contents in a file are sorted and find unsorted elements
+-k column_number (starting at 1) : sort data by a specific column
+
+uniq
+remove duplicate lines below each other:
+sort users.txt | uniq
+
+short way to combine sort and uniq:
+sort -u users.txt
+
+find the duplicate lines in a file:
+sort users.txt | uniq -d
