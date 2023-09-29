@@ -1,0 +1,33 @@
+environment variables are written in uppercase letters
+
+list all variables with 'env' command
+
+example for accessing variable (preferred way):
+echo "${PWD}"
+echo "${USER}"
+echo "${PATH}"
+echo "${OLDPWD}"
+echo "${HOME}"
+
+HOME:
+stores the current users home directory PATH
+/home/username or /Users/username (for MAC)
+
+PWD:
+stores the current working directory PATH
+
+OLDPWD:
+stores the last working directory
+
+USER:
+stores the current users username
+
+example for accessing variable (another way):
+echo "$PWD"
+echo "$USER"
+echo "$PATH"
+
+we should avoid of this way for accessing variable:
+echo $PATH
+echo $USER
+echo $PATH

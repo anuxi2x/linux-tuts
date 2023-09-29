@@ -1,0 +1,13 @@
+syntax:
+export CITY='new york'
+
+BEST PRACTICE TO SET ENVIRONMENT VARIABLE IN UPPERCASE
+
+we can also overwrite an existing variable
+example: 
+CITY='New York'
+
+be aware of whitespaces!!!!
+
+to delete envirenmont varaible:
+unser VARIABLE_NAME
