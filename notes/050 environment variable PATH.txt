@@ -1,0 +1,20 @@
+PATH stores a list of directories
+
+modifying the PATH variable
+
+PATH="${PATH}:/new/path"
+
+common issue: command not found
+in this case, we neec to verify the contents of the variable PATH
+the desire directory should be included
+the order of the entries in PATH must be correct
+
+for program search:
+which program_name
+it outputs the program path
+
+PATH: best practices
+1. keep system directories at the beginning
+2. place user-specific duplication of directories
+3. avoid duplicates
+4. minimize the number of directories to improve search efficiency]

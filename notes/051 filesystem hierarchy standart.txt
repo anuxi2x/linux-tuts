@@ -1,0 +1,8 @@
+its a unified standard of where to place files
+
+/bin: essential binaries, always available
+/sbin: essentian binaries, executed as root, and always available
+/usr/bin: non-essential binaries, could be shared with others
+/usr/sbin: non-essential binaries, executed as root, could be shared with others
+/usr/local/bin: non-essential binaries, for all users. specific to this host
+/usr/local/bin: non-essential binaries, executed as root. specific to this host
