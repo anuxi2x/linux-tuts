@@ -1,0 +1,4 @@
+append directory to our PATH variable
+PATH="${PATH}:/new/path"
+
+chmod +x program_name: program_name file is now executable

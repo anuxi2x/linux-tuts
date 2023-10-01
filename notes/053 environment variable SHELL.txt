@@ -1,0 +1,13 @@
+stores the path to the users default shell
+
+important:
+it is inherited just as a normal environment variable
+so even if we start a bash
+.. SHELL might be /bin/bash or /bin/zsh (if we using zsh as a default shell)
+
+if we want to change it to zsh:
+chsh -s "/bin/zsh"
+chsh - change shell
+
+it must be a shell that is listed in the file /etc/shells
+it should then take effect after next logon

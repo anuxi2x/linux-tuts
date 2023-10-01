@@ -17,4 +17,4 @@ PATH: best practices
 1. keep system directories at the beginning
 2. place user-specific duplication of directories
 3. avoid duplicates
-4. minimize the number of directories to improve search efficiency]
+4. minimize the number of directories to improve search efficiency

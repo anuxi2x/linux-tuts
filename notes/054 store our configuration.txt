@@ -1,0 +1,15 @@
+startup types:
+1. interactive login shell
+paths:
+/etc/profile
+~/.bash_profile
+~/.bash_login
+~/.profile
+
+2. interactive non-login shell
+paths:
+~/.bashrc
+3. non-interactive shell login
+4. non-interactive shell non-login
+for non-interactive shells bash look for an environment variable BASH_ENV
+if found, will try to execute this file (without lookin in PATH)
