@@ -1,0 +1,17 @@
+to enable configuration option:
+shopt -s [option_name]
+
+to disable configuration option:
+shopt -u [option_name]
+
+examples:
+autocd: allows to change into another directory without the cd command
+shopt -s autocd: enables feature
+shopt -u autocd: disables feature
+
+cdspell: if a minor spelling error occurs for the cd command - still navigate into the folder
+shopt -s cdspell
+shopt -u cdspell: disables feature
+
+shopt documentation:
+https://www.gnu.org/software/bash/manual/html_node/The-Shopt-Builtin.html

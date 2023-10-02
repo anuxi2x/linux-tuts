@@ -1,0 +1,12 @@
+to enable a feature:
+set -[feature]
+
+to disable feature:
+set + [feature]
+
+set -x (where -x is xtrace):
+xtrace: enables that each command that the sheel executes will be printed
+allow us to debug commands
+
+set documentation:
+https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html

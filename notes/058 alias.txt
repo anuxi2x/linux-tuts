@@ -1,0 +1,13 @@
+can be used to shorten commands
+
+example:
+alias gohome='cd ~'
+
+to list existing alias commands:
+alias
+
+to remove alias:
+unalias gohome
+
+alias is only valid within the current session
+
