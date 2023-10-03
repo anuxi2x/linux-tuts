@@ -1,0 +1,23 @@
+PS1 - Prompt String 1
+defines the appearance of the primary shell prompt
+highlt customizable with escape squences and special characters
+engances user experience and workflow efficency
+
+username: \u
+hostname: \h
+the complete hostname: \H
+current working directory:
+\w - full path
+\W - last directory of the full path
+
+time in 24-hour format: \t
+time in 12-hour format (with am/pm): \@
+
+normal use case:
+PS1='\u@\h:\w$ '
+
+works only in session
+need to add in .bashrc to have every time
+
+placeholders:
+https://www.gnu.org/software/bash/manual/html_node/Controlling-the-Prompt.html

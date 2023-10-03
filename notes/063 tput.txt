@@ -1,0 +1,17 @@
+we can use it tput generate escape sequnces:
+
+tput clear: cleares the terminal
+tput cup 5 20: moves cursor to position 5(vertical) and 20(horizontal)
+tput bold: start bold font
+tput sgr0: reset our font / terminal configs
+tput smul: start underline text
+tput rmul: end underline text
+tput setaf [color]: set foreground color
+tput setab [color]: set background color
+
+we can also use it to query the terminal
+tput colors: shows the colors quantity that we use
+tput cols: shows the columns quantity, that terminal can use at this moment
+tput lines: shows the rows quantity, that terminal can use at this moment
+cols and lines depends on terminal sizes and zoom
+

@@ -1,0 +1,6 @@
+PS1="\[$(tput sgr0)\]bash..."
+
+\[command\] - allows terminal do not count command as a characters
+
+custom PS1
+"\[$(tput setaf 2)\]➭ \[$(tput setaf 6)$(tput bold)\]\W \[$(tput setaf 3)\](\t)\[$(tput sgr0)\]\$ "

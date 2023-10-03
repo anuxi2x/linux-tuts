@@ -1,0 +1,35 @@
+terminal capabilities: TERM
+
+we can tell bash which abilities should be used by the environment variable: TERM
+for example terminal contains: xterm-256color
+there are different terminals available:
+text-only terminals (no color)
+terminal, that support 16 different color
+terminal, that support 256 different color(xterm-256color)
+
+we can list the availble modes:
+toe - table of terminfo entries (in my case it doesn't work)
+
+echo -e "\e[30;40m": 
+
+-e: allow specific characters or escape characters
+\e: create special escape characters, after that is not a text, its a special character
+[ - defines terminal that we want to change something in the behavior
+30: black foreground
+40: black background
+36: cyan foreground
+41: red background
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]

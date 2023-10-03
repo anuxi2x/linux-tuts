@@ -1,0 +1,5 @@
+$(..)
+use only with double quotes " "
+
+we can collect the output of a program and use it:
+echo "This is the output: $(ls)"
