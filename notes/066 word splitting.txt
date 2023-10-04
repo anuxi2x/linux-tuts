@@ -1,0 +1,23 @@
+word splitting:
+bash performs word splitting on our input
+this happens, after our command has been (potentially) rewritten by expansions
+
+for example:
+touch a.txt b.txt
+
+this command will be splitted into 3 different words:
+touch
+a.txt
+b.txt
+
+the first entry is program (touch)
+a.txt the first parameter / argument
+b.txt is the second parameter / argument
+
+word splitting will occur at any character that is listed in the variable IFS
+by default, this is every space, every tab, and every new line
+
+we can disable word splitting by wrapping parts of the command into quotes:
+
+touch 'a file.txt' and touch "a file.txt" - creates a single file
+file name will be: a file.txt

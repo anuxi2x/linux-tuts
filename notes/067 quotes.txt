@@ -1,0 +1,22 @@
+what qutoes do:
+
+echo $PWD/*.txt
+echo '$PWD/*.txt'
+echo "$PWD/*.txt"
+
+no quotes:
+all availble shell expansions are being applied
+
+single quotes:
+all exansions are disabled, word splitting is disables
+
+double quotes:
+disables most expansions, such as tilde expansion (~), filename expansion (*), word splitting
+variable and parameter expansion are still working
+
+the quotes only define how bash will expand / split the command
+they do nothing else!
+thus, this would be a completely vaild bash command:
+echo 'hello' "world"
+or this:
+'echo' 'hello world'

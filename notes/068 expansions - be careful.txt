@@ -1,0 +1,22 @@
+bash command invoke process is always the same:
+1. first, the command is being expanded
+2. the, word splitting is applied
+3. quotes are being removed
+4. command is being executed
+
+this also applies to the program name that we want to execute!
+
+alywas use double quotes for variables!!!
+otherwise, word splitting will occur
+
+Best practice:
+try to refer to filenames in the same directory as ./file.txt
+alywas use the quoting style that is as restrictive as possible
+prefrer single quotes: 'hello world'
+if this is not possible, use double quotes:
+echo "hello ${USER}" or echo 'hello'"${USER}"
+use no quoting only if theres no ambiguity, or you want all expansions to be applied:
+example for no ambiguity:
+ls -al
+here we want all expansions to be applied:
+echo ./*.txt

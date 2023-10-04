@@ -1,0 +1,46 @@
+before executin, the "rewrites" and parses the command
+this happens before the command is being executed
+
+filename expansion:
+ls *
+in this case, the * is being "expanded"
+for the *, this means Bash gets the contents of the current directory
+and passes those items as parameters to the ls command
+
+this command prints the contents of our current folder:
+echo *
+
+we can also filter the files that Bash should find for us:
+echo *.txt - will find all the txt files
+echo ?.txt - will find txt files, that have only 1 letter (a.txt, b.txt and etc)
+
+Tilde expansion:
+ls ~
+this lists our home folder
+by the ~ character, we're using the tilde expansion
+this character is being expanded to the value of the environment variable HOME
+
+~+: expands to $PWD
+echo ~+ is the same as pwd
+
+Variable expansion:
+
+possible ways to write it:
+echo $HOME
+echo ${HOME}
+echo "$HOME"
+echo "${HOME}" - most preferred
+
+shell parameter expansion:
+
+query the length of a string:
+${#HOME} - counts the characters of variable HOME as bytes (1 character = 1 byte)
+
+cut out a substring:
+${HOME:start:length} - for example ${HOME:5:10}
+
+replace substring (one time):
+${HOME/pattern/replacement} - 
+
+replace substring (all occurences):
+${HOME//pattern/replacement} - for example ${HOME//anxy/something}
