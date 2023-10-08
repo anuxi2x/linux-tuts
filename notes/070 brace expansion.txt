@@ -1,0 +1,7 @@
+escaping is also a feature that "rewrites" / expands our command as well
+the single quotes disable all "rewrites" / expansions
+also the backslash is disabled
+this one does not print out a single single quote:
+echo '\''
+instead, this command is not yet finished, as the last single 
+quote has not yet been terminated

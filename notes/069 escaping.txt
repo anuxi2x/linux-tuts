@@ -1,0 +1,21 @@
+escaping - \
+
+Sometimes we want to disable Bash from performing the default actions
+Example:
+We autocomplete a filename that contains a whitespace character
+Bash might autocomplete it to:
+cat a\ file.txt
+
+It disables the normal behavior of the next character
+Here, that would be word splitting
+Thus, 'a file.txt' is the filename, that will be passed as an argument to cat 
+(instead of 2 arguments: a and file.txt)
+Escaping would also allow us to print a single double quote in the following way: echo "\""
+
+prefer to write it in this way: echo '"'
+
+Escaping is also a feature that "rewrites" / expands our command as well
+The single quotes disable all "rewrites" / expansions
+Thus, also the backslash is disabled
+Thus, this one does not print out a single single quote: echo '\''
+Instead, this command is not yet finished, as the last single quote has not yet been terminated

@@ -1,0 +1,30 @@
+command substitution
+
+We can also execute a command and use the output as a replacement for this, we can use command substitution: $(...)
+example:
+echo "$(cat file.txt)"
+It's best to still have double quotes around it, to disable word splitting
+This will execute the command in a subshell environment and collect the output (subshell = new bash process)
+
+Sometimes this can be useful:
+echo 'The size of my home directory is: '"$(du -sh ~)"
+echo 'There'"'"'re '"$(ls | wc -l)"' files in the current directory'
+Another way to write it are the backticks:
+echo "`cat file.txt`"
+Though this is considered less readable, and I would not recommend using it
+
+
+process substitution
+
+Process substitution allows us to use the input or the output of a
+process as a temporary file
+To use the output of a process as a temporary file:
+<(command)
+Example (will print out the filename):
+echo <(ls)
+We can also use it in the following way (and combine it with a redirect):
+wc -l < <(ls)
+To use a temporary file as the input to a command:
+>(command)
+Example (combined with a redirect):
+echo "test" > >(cat)
