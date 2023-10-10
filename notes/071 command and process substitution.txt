@@ -1,6 +1,7 @@
 command substitution
 
-We can also execute a command and use the output as a replacement for this, we can use command substitution: $(...)
+We can also execute a command and use the output as a replacement for this, 
+we can use command substitution: $(...)
 example:
 echo "$(cat file.txt)"
 It's best to still have double quotes around it, to disable word splitting
