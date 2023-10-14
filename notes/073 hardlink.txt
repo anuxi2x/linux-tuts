@@ -1,0 +1,13 @@
+hardlink is a directory entry or reference to and existing inode
+one file can have multiple hardlink
+hardlinks behave as if they were the same file
+a hardlink can only link to files on the same filesystem
+
+if we delete a hardlinks:
+the other filenames/hardlinks remain intact
+the data is only deleted if all hardlinks are removed
+
+to create hardlink:
+ln 'target' 'hardlink'
+
+hardlinks cannot be created for directories

@@ -1,0 +1,7 @@
+special kind of file Unix systems
+
+it serves as a referance to another file or directory
+its a special way to 'shortcut' to another destination
+
+create:
+ln -s 'target' 'link'
