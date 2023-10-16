@@ -1,0 +1,10 @@
+ordinary files (-)
+directories (d)
+symbolic links (l)
+character device (c)
+block device (b)
+named pipes (p)
+sockets (s)
+
+to show the type use:
+ls -l [folder/file]
