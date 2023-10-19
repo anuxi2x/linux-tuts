@@ -1,0 +1,21 @@
+/ - root directory of the hierarchy
+/bin or /usr/bin/ - contains command binaries required for users
+/boot - contains files for the bootloader
+/dev - contains device files that represent hardware and software device
+/etc - contains systed-wide config files and directories. These files are generally txt files, which can be edited for system config
+/home - contains personal directories for users, user-specific settings, documents, and other files
+/lib or /usr/lib - contains library files that supports binaries located under /bion and /sbin. Depending on systed we can have /lib32 and /lib64
+/media - contains mount point for removable storage media
+/mnt - mount points for additional filesystems
+/opt - optional application software packages can be stored here
+/proc - virtual fulesystem (usually procfs), provides info about processes and kernel
+/root - contains the personal data for the root user (home folder of the root user)
+/run - run-time data. Files here will be removed / emptied during boot or will be discarded on shutdown
+/sbin or /usr/sbin - contains system binaries that are generally used by the root user
+/srv - files for servies (if we dont store them in /var). Quite often, data offeret by FTP servers
+/sys - information about devices, drivers and kernel features
+/tmp - contains temporary files created by system and users. Will be deleted on reboot
+/usr - contains shareable, read-only data. Inlcudes system binaries, libraries, documentations, and source-code for various system programs. Files in this folders could be shared between multiple computers
+/usr/local - for files that should not be shared between multiple computers
+/var - contains variable data files like logs, databases, websites and email. This directory's contents changtes as the system runs
+/lost+found - if there our filesystem crashed and we need to recover files there and files get lost we can be able to recover them

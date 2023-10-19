@@ -1,0 +1,17 @@
+during the creation of a filesystem, space is reserved for inodes
+this space cant be used for anything else
+
+show how many inodes available:
+df -ih
+usually we cant never reach the limit
+
+but if applications uses many small files:
+this can be theoretically reached
+processes or apps crash or cant be started
+os crashes
+
+to solve this:
+no longer needed files can be removed
+can be archived to (.tar)
+filesystem can be recreated with a higher inode limit
+data can be stored on additional drives

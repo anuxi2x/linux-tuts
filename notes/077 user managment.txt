@@ -1,0 +1,82 @@
+user information is stored in various files:
+
+/etc/passwd:
+contains basic user account information
+usernam, user ID (UID), group ID (GID), user description (full name), home directory and default shell
+readable by all users
+
+/etc/shadow:
+stores encrypted user passwords and password aging information
+stores additional information, such as the date of the last password chande, expiry dates and etc.
+readable only by the root users
+
+for passwords in /etc/shadow:
+* - there is no password, no loggin allowed
+! - technically login is allowed, but password is locked
+
+/etc/group:
+contains information about the groups, and their members
+readable by all users
+
+to create user:
+useradd [options] username
+
+the most important options are:
+-m: create home directory
+without -m user will be a service
+-d: set custom home directory
+-s: specify defailt shell
+
+managing groups:
+-g: specify primary group instead of using default config
+often, default configuration is that a new group will be created with the same name as the username
+-G: add user to a secondary groups
+
+to set password for users:
+passwd [option] [username]
+
+the most important options:
+-S: display password status
+-d: delete password
+-n: set minimum password age (days)
+-x: set maximum password age (days)
+-l: lock user account
+-u: unlock user account
+
+/** passwd -S 
+jannis P 03/29/2023 0 99999 7 -1
+P - regular password
+03/29/2023 - change date
+0 - can change password every day
+99999 - number of days until my password will expires
+7 - noticed 7 days before my password expires
+-1 - if my password expires i can log in
+**/
+
+to modify another users details:
+usermod [option] username
+
+the most important options:
+-c: change full description (full name)
+-s: change default shell
+
+we should really consider if we want to use those options:
+-d: change home directory
+-m: to also move the existing home directory to the new location
+-l: change username
+
+managing groups:
+-g: change primary group
+-G: change secondary group
+-aG: add secondary group
+
+/** sudo usermod -s /bin/bash -c 'Lauren M.' lauren **/
+
+to delete users:
+userdel [options] username
+
+options:
+-r: removes the home directory + mails
+-f: removes the home directory + mails. Forces the removal of the user, even if the user is still logged in.
+Might also delete a group with the same name as this user depending on system config
+

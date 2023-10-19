@@ -5,3 +5,8 @@ its a special way to 'shortcut' to another destination
 
 create:
 ln -s 'target' 'link'
+
+to see symlinks:
+ls -l
+
+starts with l is symlinks
