@@ -1,0 +1,30 @@
+sudo stands for 'superuser do'
+it gives us temporarily privilaeges of another user-by default from the root user
+it executes commands with elevated / changed permissions
+required user authentication (with the password)
+the user must be allowed to use sudo
+
+sudo access stored in:
+/etc/sudoers
+
+we should only use the visudo command to safely edit this file
+
+username ALL=(ALL:ALL) ALL 
+%username (for user group) ALL=(ALL:ALL) ALL
+
+we could also use a group to enable sudo access:
+group: sudo
+usermod -aG sudo username
+on other systems, this group might also be called wheel
+
+sudo is used by prefix
+
+sudo will be stored in a session (by default: 15 min)
+we can expire session by using: sudo -k
+or can also start a new shell with additional privileges: sudo -s
+
+sudo into a different user
+we can also use sudo to start a program as a different user:
+sudo -u [username] bash
+this would start a program 'bash' as the user that will mentioned in username field
+

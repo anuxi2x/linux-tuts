@@ -1,0 +1,21 @@
+each user has a primary and zero to many secondary groups
+primary groups stored in /etc/passwd
+
+secondary groups:
+multiple memberships allowed
+stored in /etc/group
+
+this allows us to give this user fiune grained access rights to our system
+
+we can list a user's groups with this command:
+groups [username]
+
+
+existing groups in ubuntu
+
+roor: the superuser group with administrative privileges, allowing complete control over the system
+sudo / whell: members can use sudo. May also be called 'wheel'
+adm: allows members to read log files
+lpadmin / lp: member may manage printers and print queues (CUPS). May also called 'lp'
+www-data: a group for web server processes (such as Apache or Nginx), gives access to web content
+plugdev: Allow this user to manage pluggable devices (USB's, external HDDs, and etc.)

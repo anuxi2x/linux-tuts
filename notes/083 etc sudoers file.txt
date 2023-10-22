@@ -1,0 +1,22 @@
+line in /etc/sudoers
+username ALL=(ALL:ALL) ALL
+
+username: The username, this rule should be applied to this user
+ALL: The hostname that this rule should apply to (ALL:ALL): The run configuration
+The first ALL: The user that the user jannis can sudo into
+The second ALL: The group that the user jannis can sudo into
+If we don't specify this, we can only sudo into the root user
+ALL: The command specification
+We can also specify NOPASSWD:, to allow sudo without a password (potential security risk):
+username ALL=(ALL:ALL) NOPASSWD: ALL
+
+/etc/sudoers.d/username - to make a custom sudo
+
+We can also just allow specific programs:
+username ALL= NOPASSWD: /usr/bin/apt-get 
+This would give jannis access to only the program apt-get
+This might also be a security issue:
+I could also remove any program I want
+I could install any program I want
+Some of those programs might start a service that runs in the background... and executes files
+Those then might be executed with additional privileges

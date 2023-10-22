@@ -1,0 +1,42 @@
+3 important levels of permissions:
+Owner (u) 
+Group (g)
+Others (o) 
+
+Type of permissions:
+Read (r / 4): 
+Allows viewing file contents or listing directory contents
+Write (w / 2): 
+Allows modifying file contents or creating / deleting files in a directory
+Execute (x / 1): 
+Allows running a file as a program or accessing a directory's contents
+
+Assigning permissions to a file
+
+Permission levels: Owner (u), group (g), others (o)
+Type of permissions: Read (r / 4), write (w / 2), execute (x / 1)
+
+Examples:
+chmod u+x file.txt: 
+Would give the owner (u) executable rights
+chmod g-w file.txt: 
+Would remove the write permission for the group(g)
+chmod o+r file.txt: 
+Would give other users (o) read access to this file or directory
+
+Changing owner / group of a file
+
+We can also change the owner / group of a file:
+chown user:group file.txt
+
+numerical permissions:
+
+example:
+chmod 754 file.txt
+
+First digit is for the owner:
+7 = 4 + 2 + 1 => read, write, execute
+Second digit is for the group:
+5 = 4 + 1 => read, execute
+Third digit is for all others:
+4 => Read

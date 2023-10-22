@@ -1,0 +1,11 @@
+change usergroup syntax: 
+usermod [options] username
+
+manage groups:
+-g: Change primary group
+-G: Change secondary groups
+-aG: Add secondary group
+
+depending on the system, we might also be able to use additional tools:
+adduser [user] [group]
+deluser [user] [group]

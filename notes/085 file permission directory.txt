@@ -1,0 +1,9 @@
+File permissions for directories:
+Read (r): Access directory contents
+Write (w): Add or remove files (we also need execute permissions for this though)
+Execute (x): Enter and traverse directory
+
+If we want to change permissions / ownership for a whole directory structure...
+we can use the parameter -R:
+chown jannis:jannis -R ./directory
+chmod 777 -R ./directory

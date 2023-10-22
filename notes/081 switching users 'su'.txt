@@ -1,0 +1,2 @@
+switch user - the su command
+su [other-user-username]
