@@ -1,4 +1,4 @@
-cat allows us to process and extract data from a file or standard input
+cut allows us to process and extract data from a file or standard input
 
 cutting by bytes:
 cut -b

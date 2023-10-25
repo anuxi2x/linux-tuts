@@ -1,0 +1,8 @@
+example for getting ID:
+ps -ef | grep -F 'firefox' (but we also have additional output)
+
+to have only ID of process:
+pgrep firefox
+
+also it can be combined like this:
+renice -19 $(pgrep firefox)

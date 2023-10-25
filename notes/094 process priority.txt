@@ -1,0 +1,16 @@
+nice: 
+used for set process priority
+range: -20 - +19
+-20: the highest priority
++19: the lowest priority
+
+default niceness for new process is 0
+Processes with lower niceness (higher priority) receive more time from the scheduler
+We need administrative privileges to lower the niceness / increase the priority of a process
+We don't need any privileges to increase the niceness / lower the priority of a process
+
+Set the niceness for a program:
+nice -n [niceness] [program]
+
+We can also change the priority of an existing process:
+renice -n 19 [process ID]

@@ -1,0 +1,14 @@
+We let our CPU switch between those
+If we switch fast enough, it will seem like we're running all programs at the same time
+This switching is called scheduling
+If our CPU switches from one program to another, it's called "context switch"
+
+cat /proc/[process ID]/status | grep ctxt
+
+ctxt: context switch
+
+We can use the watch command:
+This allows us to automatically re-execute a command
+
+watch -n 0.5 grep ctxt /proc/12345/status
+Refresh the output every 0.5 seconds
