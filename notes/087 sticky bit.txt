@@ -1,0 +1,25 @@
+sticky bit is an extra bit that we can set for all files or directories
+
+for files:
+obsolete, no longer used
+it used tp indicate that an executable file can remain in memory to be loaded more quickly on next launch
+
+for directories:
+without sticky bit, any user with w+e permissions for a directory can rename / delete files in it
+if the sticky bit is set, only the owner (and root) of a file or the directory can remove or delete a file
+
+the sticky bit especially used for the /tmp folder
+
+to set sticky bit:
+chmot +t [folder]
+chmod 1777 [folder]
+
+to unset sticky bit:
+chmod 0777 [folder]
+
+to inspect sticky bit:
+ls -l
+
+if the file / directory also has executable permissions for others:
+last character will be a 't'
+otherwise, the last character will be a 'T'

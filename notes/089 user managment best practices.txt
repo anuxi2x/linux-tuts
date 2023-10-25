@@ -1,0 +1,8 @@
+Prefer groups to manage privileges
+Use meaningful group names
+Assigning users only the necessary permissions and group memberships required
+Avoiding the use of overly permissive access rights
+Don't give write access to everybody
+Minimizing the number of users with elevated privileges
+Keep group memberships up-to-date
+Regularly review group permissions

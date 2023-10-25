@@ -1,0 +1,14 @@
+A process:
+An instance of a program
+Independent execution unit with its own resources:
+CPU & Memory resources
+Opened files, network connections
+It is managed by the kernel (lowest level of the operating system)
+
+Each process has:
+A process ID (pid)
+A user under which this process runs under
+A state (running, waiting, stopped, zombie)
+And various other properties
+All processes are organized in a hierarchy
+

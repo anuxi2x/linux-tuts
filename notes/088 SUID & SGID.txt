@@ -1,0 +1,38 @@
+SUID = Set User ID
+we can set a special bit for executable files
+if this bit is set:
+the executable will gain the rights of the owner
+this allows unpriviliged users to access priviliged resources
+
+be careful:
+This can be a major security issue if used improperly
+On most systems, the SUID bit is limited to executable binary files
+It is usually not supported for executable scripts (.sh, .py,...)
+If we set it on our own programs, we can easily create major security vulnerabilities. Be extremely careful!
+
+to inspect SUID bit:
+ls -l [file]
+
+example:
+-rwsrwxrwx
+
+lowercase s: SUID bit+execute bit
+uppercase S: SUID bit, w/o execute bit
+
+to set SUID:
+chmod u+s file
+
+important:
+we should also limit write access to this file as much as possible
+
+to inspect SGID bit:
+ls -l [file]
+
+example:
+-rwxrwsrwx
+
+lowercase s: SGID bit+execute bit
+uppercase S: SGID bit, w/o execute bit
+
+to set SUID:
+chmod g+s file

@@ -1,0 +1,28 @@
+ps - Process Status
+Displays information about running processes
+Useful for monitoring system resources
+It works (almost) the same on macOS and Linux
+
+ps -A, ps -e: 
+Show all processes, from all users and all sessions
+
+ps -f:
+Full-format listing: Show extended information, such as user, terminal, and parent process (PPID)
+
+ps -p 1234,1235:
+Show processes with process ID 1234 and 1235
+We are also allowed to omit (leave out) the -p, and even the comma:
+ps 1234 1235
+
+ps --forest:
+Only Linux: Show the processes as an ASCII tree
+
+ps -l:
+Show entries in long format (a few more columns)
+
+Linux uses POSIX standart, MacOS uses BSD 
+
+POSIX - Portable Operating System Interface (IEEE 1003)
+idea of standards for maintain compatibility between operating systems
+defines common APIs
+Define common shell utilities and tools

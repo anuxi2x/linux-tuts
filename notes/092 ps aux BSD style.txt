@@ -1,0 +1,9 @@
+ps also supports BSD style parameters
+BSD style parameters are parameters without a dash
+If we use a BSD style parameter, certain defaults are different
+And (at least some of) those parameters do behave differently!
+
+ps aux / ps a u x
+ps a: Show all processes of all users
+ps u: Displays the information in a more user-oriented format
+ps x: Show processes without a tty (=processes outside of a terminal)

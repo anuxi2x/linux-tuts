@@ -1,0 +1,19 @@
+umask allows us to specify who should be able to access new files
+by default 777 for directories and 666 for files
+if we set umask to 022:
+directories will have 755
+owner: read+write+execute
+group and others: read+execute(but not write)
+and files will be 644:
+owner: read+write
+group and others: read (but not execute+write)
+
+to show current umask value:
+umask
+
+its available for session, to change it permanently ~/.bashrc
+usually we can edit /etc/login.defs file
+
+be aware:
+changes umask command in a shell overwrite this for the current shell session
+make sure that the umask is not overwriten during startup of the shell
