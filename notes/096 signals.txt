@@ -1,0 +1,7 @@
+signals specific kind of massages and they will interrupt the process flow at a convenient (iran harmar) time
+its a mechanism to asynchronously notify a process of an event
+
+operating system is responsible for delivering the signal to the process
+maintains a signal queue, so we can send a signal to every process (even to one that is not active right now)
+
+signals interrupt the normal process flow over process and process is forced to handle signal first and the it can resume to normal stuff

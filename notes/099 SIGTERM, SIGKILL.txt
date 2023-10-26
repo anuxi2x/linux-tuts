@@ -1,0 +1,35 @@
+SIGTERM (15):
+it used to tell the process that it should terminate
+
+imagine like this: 
+Hey process, would you please come to an end? If you can't that's totally alright as well, just please try to come to an end
+
+we can send signals to the following ways:
+kill [process id]
+kill -s SIGTERM [process id]
+kill -s 15 [process id]
+kill -SIGTERM [process id]
+kill -15 [process id]
+
+SIGTERM vs SIGINT
+SIGTERM tells the process to terminate
+SIGINT tells the process to terminate, because we are in a shell and we would like to regain control immadiately
+
+SIGTERM and SIGINT can be overriden by process or can be ignored from our program
+
+SIGKILL (9):
+to kill a process immadiately we can use SIGKILL signal
+
+be careful:
+this may cause data loss
+files might not have been written completely, or might be in an inconsistent state
+
+this signal is unique:
+it is not handled by the process, its handled by kernel
+the program isn't even informed that theres a SIGKILL event
+
+syntax:
+kill -s SIGKILL [process id]
+kill -SIGKILL [process id]
+kill -s 9 [process id]
+kill -9 [process id]

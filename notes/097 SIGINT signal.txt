@@ -1,0 +1,9 @@
+SIGINT(2):
+usually sent from the terminal to a program
+meant to indicate we would like to stop and regain control over our terminal
+
+for example:
+wget 'some download link' 
+CTRL+C will interrupt this download process
+
+programs can listen to that signals and perform custom actions - including ignoring signal

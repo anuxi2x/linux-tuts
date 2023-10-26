@@ -1,0 +1,12 @@
+we can send signal from another places to a process
+usually, we use the kill command for this
+
+the program is just called kill
+but all it does is to send signals to a program
+
+syntax:
+kill -s [SIGNAL] [process ID]
+
+example:
+
+kill -s SIGINT $(pgrep [program name])
