@@ -14,3 +14,6 @@ nice -n [niceness] [program]
 
 We can also change the priority of an existing process:
 renice -n 19 [process ID]
+
+runs cpu benchmark for 10 threads:
+sysbench cpu run --thread=10
