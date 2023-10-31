@@ -1,0 +1,15 @@
+we can also use the killall command for sending signals (included childs)
+the difference to kill is, that we select the process by name
+
+example:
+kilall firefox
+
+we can also send signal with killall command
+
+syntax:
+kilall -s [SIGNAL] [process-name]
+
+On MACOS -s has different meaning. It will make the program more verbose and prevent any signal from being sent
+
+syntax for MACOS:
+killall -SIGINT firefox

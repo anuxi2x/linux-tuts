@@ -1,0 +1,20 @@
+important parameters for top
+
+-u [username]: show only processes owned by the specified user
+-d [seconds]: set the delay between display updates, in seconds. Default value is 3 seconds
+-i: start top with the idle processes hidden. This shows only the processes that are currentlu using cpu
+-c: display the full command line used to start each process, instead of just the command name
+
+we can change the output:
+f key while output shows in terminal:
+    navigate with up/down keys
+    d or space toggles display
+    s sets sorts by highlited
+    enter to left commits
+k key while output shows in terminal:
+    k = kill sending kill signal
+r key to change niceness:
+    with process ID
+z key to switch to color mode, and the uppercase Z key (Shift+Z), to configure it
+
+/root/.config/procps/toprc : file for override and customize

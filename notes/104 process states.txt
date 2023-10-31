@@ -1,0 +1,15 @@
+running state (R)
+means that this process actively running on the computer
+
+sleeping state (interruptible) (S)
+means that everything is fine with the program, it was running before and its now waiting for some event
+
+uninterruptible sleep state (D)
+our program is waiting for the kernel to execute this sytem call to execute this access to file system or sending data, in that time its uninterruptible sleep
+
+traced or stopped state (T)
+process state when its stopped by SIGSTOP, SIGTSTP, ptrace
+
+zombie state (Z)
+when our program exits, then it becomes a zombie process and its no longer running, resources are made been available for our OS, memory is being free, but there an entry for our process table, then it would be a zombie process
+ 

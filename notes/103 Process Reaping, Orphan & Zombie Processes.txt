@@ -1,0 +1,32 @@
+what happens when a process exits ?
+first, most of the resources are made available again
+
+parent process:
+
+    child termination:
+    when a child process terminates, the kernel sends a SIGCHLD signal to the parent
+    the parent can then terieve the childs exit status
+
+    process reaping:
+    the parent process uses a system call (wait() or waitpid()) to collect the childs exit status
+    this action is known as 'reaping' the child process
+    in a bash, we can access the childs exit code: $? (if prints 0 (error code) - its ok, except 0 all numbers have some error)
+    
+    orphan process:
+    if the parent process ends before the child, the child becomes an orphan and is adopted by the init process
+
+zombie process:
+a zombie process is a process that has finished executing but still ha an entry in the process table
+this usually occurs when the parent process hasnt read the childs exit status yet
+
+characteristics:
+zombies can lead to process table overflow
+
+zombie processes marked as Z (second column) in:
+ls -lef
+
+get maximum process id as we can use in our system:
+cat /proc/sys/kernel/pid_max
+
+zombie processes removed autamically
+if not, they can be manually reaped with SIGCHLD signal to their parent

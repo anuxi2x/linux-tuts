@@ -1,0 +1,34 @@
+the program top allows us to display all processes from our system like in process monitor in user interface
+
+top is looking for /proc/ directory
+
+if we use top with sudo rights to display more tasks
+
+load avarage: 0.52, 0.26, 0.27
+first number: how much cpu's in last 1 minute
+second number: how much cpu's in last 5 minute
+third number: how much cpu's in last 15 minute
+
+%cpu(s): 3.8 us, 0.7 sy, 94.7 id
+us - utilize in user space
+sy - utilize in kernel space
+id - idle
+
+MiB Mem: 1967.5 total, 119.7 free, 489.6 used, 1358.2 buff/cache
+total - how much total memory
+free - how much free space memory
+used - how much used
+buff/cache - how much buffered or cached memory
+
+MiB Swap:
+swapping means that its like a file on our hard disk or in our ssd. This is rather slow and everything works
+
+top vs htop:
+there are more ways to use the top program, and additional ways to configure it
+but on most (unix) systems, there's better program available htop
+
+to install htop Debian:
+sudo apt-get install htop
+
+to install htop Red Hat:
+sudo snf install htop

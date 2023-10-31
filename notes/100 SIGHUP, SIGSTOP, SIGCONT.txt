@@ -1,0 +1,15 @@
+SIGHUP (1):
+for usual programs it used to be communicate that the terminal has been closed
+the program that usually exists
+for background processes (daemons) it may also mean that the program should reload its configuration
+
+to send a SIGHUP command:
+kill -s SIGHUP [process id]
+
+SIGSTOP (19):
+process is being put into a stopped state (=paused)
+process cant ignore it
+we can later resue the process again (with SIGCONT)
+
+SIGCONT (18):
+paused processes with SIGSTOP will be continued

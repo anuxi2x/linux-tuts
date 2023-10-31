@@ -1,0 +1,20 @@
+kill vs /usr/bin/kill vs /bin/kill
+
+lot of commands exists twice:
+one time as a shell build-into
+and one more time as an executable file
+
+to check this:
+type kill
+
+kill is a shell built-in:
+it means that shell is providing this functionality
+when we call the kill command, we are not calling the executable file from the OS
+
+kill provides additional functionality and behaves differently than the executable from the OS
+
+to list all SIG - s
+kill -l
+
+/usr/bin/kill -l 
+will perform signals without SIG prefix and numbers
