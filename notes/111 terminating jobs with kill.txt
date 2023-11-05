@@ -1,0 +1,6 @@
+to terminate job:
+kill %[job-id]
+this will send SIGTERM to the job and will ask the job to terminate itself
+
+if it doesnt work, we could of course also send SIGKILL to a job:
+kill -s SIGKILL %[job-ID]

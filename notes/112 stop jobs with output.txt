@@ -1,0 +1,13 @@
+Sometimes, we want to stop jobs that create output
+We want to see the whole output of a program
+And we don't want the program to just directly write to our terminal
+
+there was a bash option called stty
+
+stty is a tool to change / print the terminal line settings
+by setting the tostop option, we can tell it to suspend the job if it creates any output
+when we now start a background job it will only run until it creates any output
+once it writes any output, the job will be suspended immadiately
+
+stty tostop - enable feature
+stty -tostop - disable feature

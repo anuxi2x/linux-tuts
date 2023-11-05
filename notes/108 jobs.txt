@@ -1,0 +1,23 @@
+a job is a command that is being executed
+
+a job can consist out of multiple programs:
+cat file.txt | wc
+in this case, we have 2 programs that are being executed at the same time: cat and wc
+bot of those programs are bundled into one job that is being executes
+
+so far:
+foreground jobs:
+we have looked at foreground jobs
+those occupy our shell: Bash will wait for its completion before accepting a new command
+
+to start background jobs in Bash:
+[command] &
+
+example:
+ping -c 10 google.com &
+the -c option limits the number of ping packets to 10
+because of the & symbol, the command will be started as a background job
+the output will still be displayed in the shell (unless we redirect it)
+it will display the job ID and the last process ID
+
+in case that we redirect the output, job is in progress, but shows up the status when some command will be executed

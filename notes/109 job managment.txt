@@ -1,0 +1,18 @@
+imagine that we running ping command in the background
+
+to list all background jobs:
+jobs
+output will be:
+[1]+ Running {ping command}
+
+to move job from background to foreground:
+fg [%job-ID]
+
+if we have 1 job also can use only fg command
+
+If there're multiple jobs, it will switch to the current job (marked with a + in the jobs table)
+
+important:
+only foreground jobs can receive keyboad input and signals
+this will only ask foreground jobs / processes to quit themselves
+but it will not work for background jobs

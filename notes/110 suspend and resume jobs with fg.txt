@@ -1,0 +1,14 @@
+to suspend the job:
+CTRL+Z
+
+this internally sends a SIGSTP signal to the programs involved
+SIGSTP is a nicer version of the SIGSTOP signal: It asks the program to pause execution and return control to the terminal
+a program could itnore it though
+the job can be resumed later
+
+to resume the job:
+fg [%job-ID]
+fg [%job-ID] & - to resume it in background
+bg [%job-ID] - to resume it in background
+
+SIGCONT signal is sent to the program
