@@ -1,0 +1,8 @@
+imagine that we have 3 background downloads
+with wait command, we can wait for background jobs
+
+wait - waits until all currently running jobs have changed their state
+
+wait [process-ID]
+wait [%job-ID]
+wait -n - wait for any job to be completed

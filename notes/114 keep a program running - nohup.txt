@@ -1,0 +1,13 @@
+nohup vs &
+
+nohup ping -c 10 google.com:
+nohup disconnects the ping program from the SIGHUP signal. Ping is still a foreground process
+ping will remain running, even after the terminal has been closed
+
+ping -c 10 google.com &:
+ping is being launched as a background process for our current terminal.
+tt will terminate when we close the terminal, because it still receives the SIGHUP signal
+
+nohup ping -c 10 google.com &:
+nohup disconnects the program from the SIGHUP signal, thus it will keep running if we close our terminal
+it's a background process, so it will run in the background of our current terminal
