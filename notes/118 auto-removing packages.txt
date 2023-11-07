@@ -1,0 +1,7 @@
+full-upgrade / dist-upgrade only uninstalls dependencies, if they're exclusive and need to be uninstalled
+all other dependencies will remain installed, even if the are no longer needed
+
+to uninstall those:
+
+sudo apt autoremove
+sudo apt-get autoremove

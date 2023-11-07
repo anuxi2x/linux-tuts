@@ -1,0 +1,16 @@
+dbkg - Debian Package Manager
+
+dpkg is responsible for installing software packages
+those packages are distributed as .deb files, and we can install them through dpkg
+
+example:
+dpkg -i package.deb
+-i stands for install
+
+.deb file is compressed archive (ar file format) with all the files needed for the program, and its installation on the system
+
+https://packeges.ubuntu.com/
+website for packages
+
+to check the codename of our linux distribution:
+lsb_release -a

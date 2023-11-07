@@ -1,0 +1,25 @@
+sudo apt upgrade
+sudo apt-get upgrade
+
+this will install all available and possible updates - and even install additional dependencies (if they become necessary)
+it will never remove any package from our system, even if the're no longer needed
+
+sudo apt full-upgrade
+sudp apt-get dist-upgrade
+this will:
+try to install all available and possible upgrades
+uninstall dependencies if this is required in order to install the upgrade
+
+example for this:
+package A depends on package B (v1.0)
+package A is updated, now depending on package C (v1.0), which conflicts with package B (v1.0)
+package B is uninstalled during dist-upgrade / full-upgrade
+
+Warning: dist-upgrade / full-upgrade
+be careful with this 2 programs
+it can remove programs you were relying on, in order to solve dependency problems
+
+be sure to:
+really read the output of what it wants to do
+have a backup
+have enough time to fix potential problems

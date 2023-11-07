@@ -1,0 +1,36 @@
+apt - Advanced Package Tool
+
+apt-get:
+stable API, we should use this when we're writing scripts
+
+apt:
+API and parameters might change when deemed necessary
+
+apt-get / apt needs to know which packages are available, and where it can download them from
+we need to connect to central repositories, which provide our packages
+
+repositories from the system:
+/etc/apt/sources.list
+
+additional (third party) repositories:
+/etc/apt/sources.list.d/*
+
+important:
+those repositories provide a list with packages, their version and other information
+we must fully trust those repositories
+they could even replace existing software on our system
+
+once we have our repositories, we need to update the 'package definitions'
+this means, that we fetch the latest list of available packages from the repositories
+
+sudo apt update / sudo apt-get update
+
+if we want to install neofetch, we could now do it:
+sudo apt install neofetch
+
+this package is then installed - and all the dependencies (third party packages) needed to execute neofetch
+
+apt will remember, which package we installed manually and which one just installed as dependencies
+
+to install package without third party packages:
+sudo apt install --no-install-recommends neofetch
