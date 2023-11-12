@@ -1,0 +1,4 @@
+show dependencies:
+
+sudo apt show bash
+sudo apt-cache show bash

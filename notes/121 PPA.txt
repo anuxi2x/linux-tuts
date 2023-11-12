@@ -1,0 +1,11 @@
+PPA - Personal Package archive
+its only for Ubunty not on Debian systems:
+https://launchpad.net/ubuntu/+ppas
+
+for example, for the latest php version, we could just add a ppa:
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+
+to remove a ppa:
+sudo add-apt-repositorit --remove ppa:ondrej/php
+

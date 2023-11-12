@@ -1,0 +1,21 @@
+system reads the following files for its repositories:
+
+/etc/apt/sources.list
+/etc/apt/sources.list.d/*
+
+syntax for /etc/apt/sources.list
+
+deb http://am.archive.ubuntu.com/ubuntu/ jammy main restricted
+<type> <url> <distribution> <domain1> <domain2> ...
+
+<type>:
+    deb: this repository contains binary packages
+    deb-src: this repository contains source packages
+<url>: the address of the repository
+<distribution>: the ubuntu version, we want to download the packages for
+
+<domain>:
+main - officially supported by Canonical
+restricted - non free software
+universe - community supported/Third party
+multiverse - non-free software

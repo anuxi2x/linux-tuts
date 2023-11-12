@@ -1,0 +1,10 @@
+debsums verifies all packages that contain an md5 sum
+
+debsums [package / .deb file]
+
+sudo apt install debsums
+
+important parameters:
+-a : list all files (including config files)
+-l : list packages, that dont have a list of files with their md5 sum attached to them
+-s : silent, only list errors
