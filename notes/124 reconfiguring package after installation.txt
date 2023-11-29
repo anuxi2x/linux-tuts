@@ -1,0 +1,26 @@
+sometimes packages asks us questions when we install them or they run configuration when we install them on our system
+
+Example:
+bootloader (for example: grub) might want to install itself as the main bootloader
+
+webserver might set itself up in a way that a user and group is created and that it automatically starts with our system 
+
+display manager (manages the login screen) might start a dialog to ask us which one should be the default display manager
+
+sometimes we want to re-run those scripts
+
+we can do if with the following command:
+sudo dpkg-reconfigure <package_name>
+
+we install the package "locales" the first time
+
+This packages asks us which locales we want to generate
+
+What is a locale?
+It defines how numbers and dates should be displayed
+A lot of programing languages rely on the operating system to provide this functionality
+
+For example, if we want to have a website (for example programmed in PHP), and we want to use the build-in functions to format dates
+The corresponding locale must be generated
+To reconfigure a package:
+sudo dpkg-reconfigure locales

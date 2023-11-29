@@ -1,0 +1,7 @@
+Snap is a centralized repository for complete applications
+
+available packages:
+https://snapcraft.io/
+
+to install:
+snap install [package_name]
