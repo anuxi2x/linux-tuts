@@ -1,0 +1,15 @@
+to prevent package from being updated:
+dnf upgrade --exclude=[package],[package2],...
+
+or permanently exclude it in our /etc/dnf/dnf.conf:
+excludepkgs=[package]
+
+theres also a plugin for dnf:
+dnf-versionlock (google it)
+
+be careful:
+preventing a package from being updated can cause problems with the dependencies
+
+best practice:
+we should review those packages from time to time and consider if its necessary to block updates
+before large system upgrades, we should try to remove all excluded packages. This will allow DNF to update all software, and prevent many potential dependency issues

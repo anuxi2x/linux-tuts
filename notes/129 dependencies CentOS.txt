@@ -1,0 +1,29 @@
+software dependencies:
+required resources by a software for its proper functioning
+includes other software, libraries, or operaton system features
+DNF will handle the resolution of dependencies for us
+this happen recursively - also dependencies of dependencies will be installed
+
+why do we need dependencies?
+dependencies only need to be installed 1x on our system
+this saves storage space and ensures apps all use the same dependencies
+
+provides, requires,...
+
+each package:
+	can provie certain features:
+		dnf repoquery --provides [package_name]
+	... and also require certain features:
+		dnf repoquery --requires [package_name]
+
+we can also use this to find packages:
+	we can also list which package provides a certain feature:
+		dnf repoquery --whatprovides
+	we can also list which package requires a certain feature:
+		dnf repoquery --whatrequires
+
+we can list dependencies with the following command:
+	dnf deplist [program]
+
+
+

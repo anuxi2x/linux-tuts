@@ -1,0 +1,11 @@
+to downgrade package:
+dnf downgrade [package_name]
+dnf downgrade [package_name with version]
+
+important:
+we should never downgrade the following packages:
+dbus, glibc, selinux-policy
+we should never downgrade CentOs / RHEL system to a previous version
+
+we can list available versions:
+dnf list [package_name] --showduplicates

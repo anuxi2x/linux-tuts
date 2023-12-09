@@ -1,0 +1,26 @@
+dnf automatically removes no longer needed dependencies
+let's have a look at an example:
+python3-matplotlib
+this tool has a dependency to python3-numpy (among many others)
+thus, when we install python3-matplotlib, python3-numpy is installed as well
+
+we can check that:
+python3 -c 'import numpy as np'
+
+if we now uninstall python3-matplotlib:
+the package python3-numpy is uninstalled as well
+if our application would depend on numpy... it would now fail:
+python3 -c 'import numpy as np'
+
+how to avoid this?
+we could set an option to False in /etc/dnf/dnf.conf:
+clean_requirements_on_remove=False
+
+and then we would have to remove old dependencies manually:
+dnf autoremove
+
+we could remove a package without its dependencies:
+dnf remove [package] --noautoremove
+
+we can mark packages as installed manually:
+dnf mark install [package]

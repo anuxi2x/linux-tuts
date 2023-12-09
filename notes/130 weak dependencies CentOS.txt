@@ -1,0 +1,32 @@
+we have different levels of dependencies:
+required dependencies:
+essential for our software and without these, we cant execute the program
+
+weak dependencies:
+optional software dependencies
+they enhanced the functionality, but arent required
+
+types of weak dependencies:
+
+recommends:
+package recommends another package
+most users would also want to install this other package
+
+suggests:
+The package can use another package - but usually we wouldn't need this other package
+
+by default:
+DNF will install recommended weak dependencies as well (if it doesn't trigger a conflict)
+
+list recommended weak dependencies:
+dnf repoquery --recommends [package_name]
+
+list suggested weak dependencies:
+dnf repoquery --suggests [package_name]
+
+if we want to disable weak dependencies:
+we can set this option in /etc/dnf/dnf.conf:
+install_weak_deps=false
+
+or set is as a parameter when installing:
+dnf install [package_name] --setopt=install_weak_deps=False

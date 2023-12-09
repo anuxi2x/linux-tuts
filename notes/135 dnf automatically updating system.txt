@@ -1,0 +1,10 @@
+general rule:
+if a machine is a critical server, we should not use automatic updates
+if a machine is not critical (and unplanned downtime is acceptable) we can consider opting into automatic updates
+
+first, we need to install dnf-automatic:
+sudo dnf install dnf-automatic
+second, we should have a look at the configuration file:
+sudo nano /etc/dnf/automatic.conf
+third, we need to enable timer:
+sudo systemctl enable -now dnf-automatic.timer

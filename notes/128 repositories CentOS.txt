@@ -1,0 +1,16 @@
+Repositories: where do our packages come from?
+
+lets install dnf install tool:
+dnf install gimp
+
+repositores - place where dnf downloads our files
+
+we can define those repositories in the following files:
+/etc/dnf/dnf.conf
+/etc/yum.repos.d/*.repo
+
+a full system on RHEL / CentOs needs at least:
+BaseOS - the core of operating system
+AppStream - on top of BaseOS we need applications that AppStream can do
+
+we dont have to refresh this index manually, dnf do this automatically

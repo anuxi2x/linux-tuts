@@ -1,0 +1,22 @@
+so far, our dependencies were mostly forward dependencies:
+we want to install package B that depends on package A
+thus, we also install package A
+
+what are backwards dependencies?
+we have a package B that we want to install
+we can imagine a backward dependency like this:
+	another package C wants to say: Hey, i'd enhance the functionality of B, when installing B, install me as well
+this is especially useful for third-party repositories, so they can connect to the install of existing packages
+
+supplements:
+	this package will be installed as a weak dependency if another package is installed
+
+dnf repoquery --supplements [package_name]
+
+of course, we can also check which package supplements another one:
+dnf repoquery --whatsupplements [package_name]
+
+enhances:
+this package could enhance the functionality of another package, but do not install by default
+
+dnf repoquery --enhances [package_name]

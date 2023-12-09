@@ -1,0 +1,19 @@
+rpm are archives that contain all the files & configuration required to install a software
+
+we could download rpm files manually from:
+https://mirror.stream.centos.org/
+we should usually avoid this, as it can easily lead to conflicts
+
+to inspect rpm file:
+rpm -qpl [file_name].rpm
+
+to install:
+sudo rpm -i [file_name].rpm
+
+to uninstall:
+sudo rpm -e [file_name].rpm
+
+-e: erase
+-i: install
+
+in practice dont recommended to use -e or -i for dependencesies reason. we should use dnf to install and uninstall

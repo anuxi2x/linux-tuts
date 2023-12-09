@@ -1,0 +1,18 @@
+package manager in CentOS is dnf ('Dandified yum' is the previous name)
+
+managing software
+we can use dnf to search for software:
+sudo dnf search links - uses for links browser
+
+if we are unable to use above command we need to install those:
+
+sudo dnf config-manager --set-enabled crb
+sudo dnf install epel-release
+sudo dnf update
+
+to install software:
+dnf install [software_name]
+with above command dnf will first install all the required dependencies, and install the tool
+
+to uninstall
+sudo dnf remove [software_name]
