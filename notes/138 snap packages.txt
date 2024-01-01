@@ -1,0 +1,30 @@
+Snap is a centralized repository for complete applications:
+People can publish their applications to that repository
+If we install a snap application, we should make sure that we trust the authors!
+We can have a look at the available packages here:
+https://snapcraft.io/
+
+First, we need to install snap:
+EPEL must be activated for this!
+dnf install snapd
+
+systemctl enable --now snapd.service
+
+We can install an application:
+snap install firefox
+
+to run:
+snap run firefox
+
+
+If you're running RHEL:
+You need to consider if you really want to use snap
+Snap is part of the EPEL project (epel-release, no support)
+Snap might break commercial support
+But it allows us to access certain software:
+RHEL / CentOS Stream by default ships with an ER version of Firefox (ER = Extended Release)
+But let's say we're a web developer... and depend on the latest version of Firefox for our work (and we're using RHEL)
+In that case snap might be an option for us
+
+Be aware:
+This is something you may need to discuss with your system administrator

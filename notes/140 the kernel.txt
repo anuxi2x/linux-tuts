@@ -1,0 +1,34 @@
+key functions of the kernel:
+process management
+memory management
+file system management
+networking stack
+hardware abstraction layer (HAL) - enables applications to communicate with various devices
+
+
+kernel modules
+its piece of code that can be loaded into the kernel on demand
+allows us to extend the functionality of the kernel
+
+to list kernel modules:
+sudo lsmod
+
+lock kernel update on ubuntu:
+sudo pat-mark hold linux-generic-hwe-22.04 - which is outputed from 'sudo apt search linux-generic-hwe'
+
+lock kernel update on centos:
+sudo dnf versionlock kernel
+
+on centos we need to install dnf-command(versionlock):
+sudo dnf install 'dnf-command(versionlock)'
+
+How do we communicate with the hardware ?
+
+communication layer:
+
+User mode - User applications (bash, firefox,...)
+User mode - System components (systemd, x11, Wayland,...)
+User mode - C standard library: fopen, execv, malloc, localtime,...
+Kernel mode - Linux kernel provides system calls: read, open, write, close,...
+Kernel mode - Lix kernel to manage the hardware
+Physical hardware (CPU, memory, storage, network,...)

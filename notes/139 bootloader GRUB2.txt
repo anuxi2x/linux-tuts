@@ -1,0 +1,17 @@
+After the BIOS / UEFI, the bootloader is the first software to load run on startup
+Its goal is to load the operating system
+How does it do it?
+It loads the kernel into memory and then hands control to it
+The bootloader is only responsible for this and thus active for only a very short time
+
+We can change the configuration of GRUB in the following file:
+/etc/default/grub
+To update the GRUB configuration, after each change we must run:
+
+On Ubuntu:
+sudo update-grub
+
+On CentOS:
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+
+This will update the /boot/grub/grub.cfg file (we should never edit this file directly, as it would be overwritten during updates)

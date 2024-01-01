@@ -1,0 +1,61 @@
+after the bootloader has given control to our kerner, the kernel will initializa and start the main process (PID = 1)
+on most linux systems nowadays, its the systemd process
+let look at ps program output:
+ps 1
+
+this process will then initiate all the rest:
+start the System
+mounting drives
+starting services
+configuring network connections
+starting additional applications
+
+
+the tool: systemd
+
+systemd is not just a tool, its an extensive set of tools
+
+systemd: General structure
+
+system mode:
+    systemd manages the boot process and starts all services required for this in parallel
+    it reads in config file (unit files), builds the dependency graph, and then executes all commands necessary to get to the result
+user mode:
+    the same as system mode, but for user services (after the user logins)
+
+systemd first 2 basic building blocks:
+
+Unit:
+    basic building block
+    various types available: Service, Target, Timer,...
+    Units can depend on another or each other
+
+Service:
+    represents a service that should run on our system
+    can be enabled, disabled, started, stopped, restarted, reloaded,...
+    managed by .service unit files
+
+systemd manages "Units"
+systemd searches units in various paths on our system
+those paths are usually:
+/lib/systemd/system (sometimes also /usr/bin/systemd/system): system configuration
+this is default place for configuration for the maintainer (authors of our Linux distribution / packages)
+
+/run/systemd/system : non-persistent, runtime configuration. Its cleares after reboot so we dont need to place configuration there
+
+/etc/systemd/system :
+    configuration for the administrators
+    overwrites files from /lib/systemd/system
+    this is where we should store our custom configuration
+
+we could find systemd paths with this command:
+systemd-analyze --system unit-paths
+
+to read (cat) systemd file we should need to use this command:
+systemctl cat wpa_supplicant.service
+
+get status of a unit:
+systemctl status [unit]
+
+change the status of a unit:
+systemctl {start, stop, restart, reload} [unit]

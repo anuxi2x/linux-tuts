@@ -1,0 +1,8 @@
+to enable epel-release on CentOS Stream:
+on CentOS strea, we should be ablto to install additional repositories:
+dnf config-manager --set-enable crb
+sudo dnf install epel-release epel-next-release
+
+on Red Hat, the command might be different:
+https://docs.fedoraproject.org/en-US/epel/
+

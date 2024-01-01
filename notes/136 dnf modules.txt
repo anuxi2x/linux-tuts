@@ -1,0 +1,28 @@
+for apps we want to install specific version of software
+
+dnf module is a package group - it represents and application, language runtime or a set of tools
+this allows us to choose the version we want to install
+
+to list modules:
+dnf module list
+
+to enable module:
+dnf module enamble [name]
+dnf module enamble [name]:[stream]
+
+we can also install the module directly:
+dnf module install [name]
+dnf module install [name]:[stream]/[profile]
+
+dnf install @[name]:[stream]/[profile]
+
+
+to uninstall a specific profile:
+dnf module remove [--all] [name]
+dnf module remove [name]/profile
+
+we can also disable a module:
+dnf module disable [name]
+
+to reset disabled module:
+dnf module reset [name]
