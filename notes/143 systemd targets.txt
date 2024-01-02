@@ -1,0 +1,15 @@
+target:
+    groups units logically to a goal
+    managed by .target unit files
+
+to get the current default targer:
+sudo systemctl get-default
+
+to switch target, without rebooting:
+sudo systemctl isolate multi-user.target
+
+we can list available targets with the following command:
+sudo systemctl list-units --type target --all
+
+we could also change the current default target:
+sudo systemctl set-default multi-user.target

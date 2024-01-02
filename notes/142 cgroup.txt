@@ -1,0 +1,47 @@
+cgroup
+
+control groups (cgroup) are a feature of the Linux kernel
+it organizes processes hierarchically
+and allows us to more evenly distribute system resources
+systemd heavily relies on cgroup to manage processes
+
+advantages:
+a cgroup can span multiple processes - and even contain other cgroups
+if we start a sub-process it will automatically be in the same cgroup as the parent
+
+uses of cgroups include:
+resource limiting:
+    we can configure a cgroup to not exceed a specific memory limiting
+    we can define how much % of CPU resources this cgroup may occupy
+    we can also measure how much resources certain system consume .. or freeze a group of processes
+    this can be useful when multiple services (in an application sense) / containers share the same server
+
+show processes on our system:
+systemctl status
+
+if we want to inspect cgroups:
+systemd-cgtop
+
+buy default it displays up to 3 levels of cgroup
+
+to change level:
+systemd-cgrop --depth=[level]
+
+example for cgroups: Firefox @ 100MB
+
+first step: we need to create a systemd slice in our user account.
+~/.config/systemd/user/browser.slice
+
+browser.slice:
+[Slice]
+MemoryHigh=100M
+
+after this, we can launch Firefox from executable is placed
+/usr/bin/firefox or to check where is the executable just run forefox and inspect the executable location with:
+ps -ef | grep firefox
+
+system-run --user --slice=browser.slice /usr/bin/firefox
+
+important:
+if the firefox executable is a script... the script might change the cgroup configuration
+in this case, we need to find out the real path to the real executable of firefox
